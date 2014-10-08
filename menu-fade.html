@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="include/jquery-ui.js"></script>
+<link rel="stylesheet" href="style.css" />
+<style>#craft{color:#00aeef; font-family: "arial black";}
+#one{margin:left:100px; margin-top: 10px; margin-bottom: 30px; color:#252525; font-family:arial; font-size: 20px}</style>
+<h1 id="craft">HOVERCRAFT</h1>
+<h2 id="one">Drop Down Menu Fade</h2>
+    
+    
+    <!---COPY THIS FOR USE IN YOUR OWN PROJECTS-------------------------------------->
+<style>
+#menu{
+list-style-type:none;  
+}
+#menu li a{
+text-decoration:none;
+    color:Navy;
+}
+#menu li ul li{
+list-style-type:none;
+}
+#menu li ul li a{
+text-decoration:none;
+}
+#menu li ul li ul{
+list-style-type:none;
+}
+.nav_item{
+    
+}
+.drop{
+    opacity:0;
+}
+        </style>
+
+<script> /* JQUERY FUNCTIONS */
+$(document).ready(function(){ 
+$('#menu >li').hover(function(){
+$(this).closest('li').find('>ul').css({'opacity':0}).show().animate({'opacity':1},600);
+},function(){
+$(this).find('>ul').fadeOut("slow");
+});
+});
+</script>
+</head>
+<body>  
+
+    <ul id="menu">
+        <li>
+            <a class="nav_item" href="#">Categories</a>
+            <ul class="drop">
+                <li><a href="">Item 11</a></li>
+                <li><a href="">Item 12</a></li>
+                <li><a href="">Item 13</a></li>
+                <li><a href="">Item 14</a></li>               
+            </ul>
+        </li>
+    </ul>
+             
+        </body>
+
+    <!-------------------------------------------------------------------------------->
+    
+    
+</html>

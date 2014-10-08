@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="include/jquery-ui.js"></script>
+<link rel="stylesheet" href="style.css" />
+<style>#craft{color:#00aeef; font-family: "arial black";}
+#one{margin:left:100px; margin-top: 10px; margin-bottom: 30px; color:#252525; font-family:arial; font-size: 20px}</style>
+<h1 id="craft">HOVERCRAFT</h1>
+<h2 id="one">Social Squares</h2>
+    
+    
+    <!---COPY THIS FOR USE IN YOUR OWN PROJECTS-------------------------------------->
+        <style>
+            .ss{position:absolute; width:64px;}
+            .ss_white{position:absolute; width:64px;}
+            .fb{width:64px; height:64px; display:inline-block; margin:5px;}
+            .tw{width:64px; height:64px;display:inline-block;margin:5px;}
+            .in{width:64px; height:64px;display:inline-block;margin:5px;}
+            .gp{width:64px; height:64px;display:inline-block;margin:5px;}
+        </style>
+
+        <script> /* JQUERY FUNCTIONS */
+            $(document).ready(function(){ 
+                $(".ss_white").hover(function(){
+                $(this).animate({'opacity':0},250);
+                }, function(){ 
+                $(this).animate({'opacity':1},250);
+                });
+            });
+        </script>    
+        </head>
+
+        <body>    
+            <div id="content">
+                <div class="fb"><img class="ss" src="include/fb_blue.png" /><img class="ss_white" src="include/fb_white.png" /></div>
+                <div class="tw"><img class="ss" src="include/tw_blue.png" /><img class="ss_white" src="include/tw_white.png" /></div>
+                <div class="in"><img class="ss" src="include/in_blue.png" /><img class="ss_white" src="include/in_white.png" /></div>
+                <div class="gp"><img class="ss" src="include/g+_blue.png" /><img class="ss_white" src="include/g+_white.png" /></a></div>
+            </div>
+        </body>
+
+    <!-------------------------------------------------------------------------------->
+    
+    
+</html>

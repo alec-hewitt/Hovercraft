@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="include/jquery-ui.js"></script>
+<link rel="stylesheet" href="style.css" />
+<style>#craft{color:#00aeef; font-family: "arial black";}
+#one{margin:left:100px; margin-top: 10px; margin-bottom: 30px; color:#252525; font-family:arial; font-size: 20px}</style>
+<h1 id="craft">HOVERCRAFT</h1>
+<h2 id="one">Border Fade In</h2>
+    
+    
+    <!---COPY THIS FOR USE IN YOUR OWN PROJECTS-------------------------------------->
+        <style>
+        .border-fade{
+            text-decoration:none;
+            padding:8px;
+            font-size: 20px;
+            color:#252525;
+            font-family:arial;
+            border: 3px solid transparent;
+        }
+        </style>
+
+        <script> /* JQUERY FUNCTIONS */
+            $(document).ready(function(){ 
+            $(".border-fade").hover(function(){ 
+                $(this).stop(true, true).animate({borderColor: "#00aeef" }, 500);},
+            function(){ $(this).stop(true, true).animate({borderColor: "transparent"}, 500); }); 
+            });
+            </script>    
+        </head>
+
+        <body>    
+            <div id="content">
+            <a class="border-fade" href="#">DEMO</a> <!-- DEMO LINK: MUST HAVE HOVERLINK CLASS -->
+            </div>
+        </body>
+
+    <!-------------------------------------------------------------------------------->
+    
+    
+</html>
